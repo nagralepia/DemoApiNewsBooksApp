@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightywhitebg"
+    android:orientation="vertical"
+    tools:context=".views.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/rlSelectLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txtLoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Location"
+                android:textColor="@color/bglight"
+                android:textSize="@dimen/dimen_txt_10sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtLoc"
+                android:layout_centerVertical="true"
+                android:maxLength="18"
+                android:maxLines="1"
+                android:text="Hinjewadi Phase I"
+                android:textColor="@color/black"
+                android:textSize="@dimen/dimen_txt_14sp" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/dimen_32dp"
+            android:layout_height="@dimen/dimen_32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/profile" />
+
+        <ImageView
+            android:id="@+id/imgChangeLanguage"
+            android:layout_width="@dimen/dimen_32dp"
+            android:layout_height="@dimen/dimen_32dp"
+            android:layout_marginEnd="@dimen/dimen_10sp"
+            android:layout_marginRight="@dimen/dimen_10sp"
+            android:layout_toStartOf="@id/imageView2"
+            android:layout_toLeftOf="@id/imageView2"
+            android:src="@drawable/ic_baseline_notifications_none_24" />
+
+
+    </RelativeLayout>
+
+    <!--    <LinearLayout-->
+    <!--        android:id="@+id/llSearch"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_marginLeft="@dimen/dimen_10dp"-->
+    <!--        android:layout_marginRight="@dimen/dimen_10dp"-->
+    <!--        android:background="@android:color/transparent"-->
+    <!--        android:focusable="true"-->
+    <!--        android:focusableInTouchMode="true"-->
+    <!--        android:gravity="center"-->
+    <!--        android:weightSum="1"-->
+    <!--        android:layout_below="@id/relativeLayout">-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/crdSerach"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relativeLayout"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_toLeftOf="@id/imageView3"
+        android:layout_weight="0.8"
+        app:cardCornerRadius="@dimen/dimen_20sp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <EditText
+            android:id="@+id/editTextSearch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_search"
+            android:drawableStart="@drawable/loupe"
+            android:drawableLeft="@drawable/loupe"
+            android:drawablePadding="@dimen/dimen_8dp"
+            android:enabled="false"
+            android:hint="@string/str_search"
+            android:padding="@dimen/dimen_10dp" />
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="@dimen/dimen_40dp"
+        android:layout_height="@dimen/dimen_txt_40dp"
+        android:layout_below="@id/relativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_weight="0.15"
+        android:padding="@dimen/dimen_5dp"
+        android:src="@drawable/ic_baseline_filter_list_24" />
+    <!--    </LinearLayout>-->
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/crdSerach"
+        android:layout_marginTop="10dp">
+
+        <FrameLayout
+            android:id="@+id/flFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            >
+
+            <include layout="@layout/bottom_tabs_layout" />
+        </LinearLayout>
+
+<!--        <com.google.android.material.bottomnavigation.BottomNavigationView-->
+<!--            android:id="@+id/bottomNavigationView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="55dp"-->
+<!--            android:layout_alignParentBottom="true"-->
+<!--            app:itemIconTint="@color/bglight"-->
+<!--            app:itemTextColor="@color/bglight"-->
+<!--            app:labelVisibilityMode="labeled"-->
+<!--            app:menu="@menu/bottom_nav_menu" />-->
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

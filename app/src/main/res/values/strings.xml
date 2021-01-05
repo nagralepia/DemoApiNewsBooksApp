@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">InfedisApp</string>
+    <string name="strlibrary">Library</string>
+    <string name="strnews">News</string>
+    <string name="strrupee">230/-</string>
+    <string name="str_search">Search...</string>
+    <!--    <string name="strrupee">\u20B9 230/-</string>-->
+</resources>

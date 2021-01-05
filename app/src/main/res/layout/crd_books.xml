@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/imgBook"
+            android:layout_width="100dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="Hand Quilting Think"
+            android:textColor="@color/bg"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:text="English, Paperback, Jay Shetty"
+            android:textColor="@color/bglight"
+            android:textSize="9sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:paddingLeft="5dp"
+            >
+
+            <TextView
+                android:id="@+id/txtAvgRating"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_rating"
+                android:drawableRight="@drawable/ic_grade_filled"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:text="4.8"
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+
+            <TextView
+                android:id="@+id/txtRating"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1.6"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:text="(6,407)"
+                android:textColor="@color/bglight"
+                android:textSize="9sp" />
+
+            <TextView
+                android:id="@+id/txtBookPrice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1.5"
+                android:gravity="right"
+                android:maxLines="1"
+                android:padding="2dp"
+                android:text="@string/strrupee"
+                android:textColor="@color/bglight"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

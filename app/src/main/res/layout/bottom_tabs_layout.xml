@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_tabs"
+    android:weightSum="2">
+
+    <RelativeLayout
+        android:id="@+id/rlLib"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtLib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/ic_book"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:paddingLeft="@dimen/dimen_32dp"
+            android:paddingTop="@dimen/dimen_txt_12dp"
+            android:paddingRight="@dimen/dimen_32dp"
+            android:paddingBottom="@dimen/dimen_txt_12dp"
+            android:text="Library"
+            android:textColor="@color/grey"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/txtLibSelected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_tabs_grey"
+            android:drawableLeft="@drawable/ic_book_selected"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:paddingLeft="@dimen/dimen_32dp"
+            android:paddingTop="@dimen/dimen_txt_12dp"
+            android:paddingRight="@dimen/dimen_32dp"
+            android:paddingBottom="@dimen/dimen_txt_12dp"
+            android:text="Library"
+            android:textColor="@color/black"
+             />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlNews"
+
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txtNews"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableLeft="@drawable/ic_newspaper"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:paddingLeft="@dimen/dimen_32dp"
+            android:paddingTop="@dimen/dimen_txt_12dp"
+            android:paddingRight="@dimen/dimen_32dp"
+            android:paddingBottom="@dimen/dimen_txt_12dp"
+            android:text="News"
+            android:textColor="@color/grey" />
+
+        <TextView
+            android:id="@+id/txtNewsSelected"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bg_tabs_grey"
+            android:drawableLeft="@drawable/ic_newspaper_selected"
+            android:drawablePadding="@dimen/dimen_10dp"
+            android:paddingLeft="@dimen/dimen_32dp"
+            android:paddingTop="@dimen/dimen_txt_12dp"
+            android:paddingRight="@dimen/dimen_32dp"
+            android:paddingBottom="@dimen/dimen_txt_12dp"
+            android:text="News"
+            android:textColor="@color/black"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</LinearLayout>
